@@ -1,28 +1,27 @@
-/* Global */
-
+/* Global Styles */
 * {
   margin: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
+
 .font {
-  font-family: "Sahitya,serif" !important;
+  font-family: "Sahitya, serif" !important;
 }
 
-/* Header */
-
+/* Header Styles */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 0px !important;
-  padding: 0px 10px 0px 10px;
+  padding: 0 10px;
   height: 70px;
   position: sticky;
-  top: 0px;
+  top: 0;
   z-index: 1;
 }
 
@@ -42,12 +41,10 @@ a {
   padding: 22px;
   width: 100px;
   border-bottom: 4px solid transparent;
+  transition: border-bottom 0.3s ease;
 }
 
-.nav > a:hover {
-  border-bottom: 4px solid rgb(200, 194, 194);
-}
-
+.nav > a:hover,
 .nav > .active {
   border-bottom: 4px solid black;
 }
@@ -64,8 +61,7 @@ a {
   display: none;
 }
 
-/* Section */
-
+/* Section Styles */
 .section {
   display: flex;
   flex-direction: column;
@@ -74,19 +70,14 @@ a {
   min-height: 498px;
 }
 
-/* Home */
-
+/* Home Styles */
 .home {
   display: flex;
   min-height: 498px;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  background-image: url("./images/bg-image.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: url("./images/bg-image.jpg") center/cover no-repeat fixed;
   padding: 50px;
 }
 
@@ -95,14 +86,13 @@ a {
   margin: 10px;
 }
 
-/* Shoes */
-
+/* Shoes Styles */
 .shoes {
   text-align: center;
   margin-top: 20px;
 }
 
-/* Shoes List */
+/* Shoes List Styles */
 .shoes-list {
   display: flex;
   flex-wrap: wrap;
@@ -121,7 +111,7 @@ a {
   align-items: center;
 }
 
-/* Selected Shoe */
+/* Selected Shoe Styles */
 .selected-shoe {
   display: flex;
   flex-direction: column;
@@ -142,8 +132,7 @@ a {
   flex: 1;
 }
 
-/* Cart */
-
+/* Cart Styles */
 .cart-container {
   width: 90%;
   flex-grow: 1;
@@ -166,7 +155,7 @@ a {
 }
 
 .cart-history > :nth-child(even) {
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0;
 }
 
 .cart-history-flex {
@@ -197,8 +186,7 @@ a {
   align-items: center;
 }
 
-/* Responsive */
-
+/* Responsive Styles */
 @media (max-width: 650px) {
   .drawer {
     display: inline-block;
